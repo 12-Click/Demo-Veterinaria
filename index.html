@@ -628,6 +628,9 @@
     .ftco-footer-social {
       text-align: center;
       margin-top: 10px;
+      display: flex;  /* Using flexbox to align icons in a row */
+      justify-content: center;  /* Center the icons horizontally */
+      gap: 15px;  /* Adds space between icons */
     }
 
     /* For the copyright section */
@@ -670,14 +673,8 @@
     }
 
     /* Social media icon styling */
-    .ftco-footer-social {
-      text-align: center;
-      margin-top: 10px;
-    }
-
     .ftco-footer-social li {
-      display: inline-block;
-      margin-right: 15px;
+      list-style: none;  /* Remove bullet points */
     }
 
     .ftco-footer-social li a {
@@ -722,11 +719,11 @@
             </ul>
           </div>
 
-          <!-- Social media icons centered, with previous style -->
+          <!-- Social media icons centered on one line -->
           <ul class="ftco-footer-social list-unstyled mt-3">
-            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            <li><a href="#"><span class="icon-twitter"></span></a></li>
+            <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <li><a href="#"><span class="icon-instagram"></span></a></li>
           </ul>
         </div>
       </div>
@@ -745,6 +742,7 @@
     </div>
   </div>
 </footer>
+
 
 
 			    

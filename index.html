@@ -618,19 +618,32 @@
 		
 <footer class="ftco-footer ftco-bg-dark ftco-section">
   <style>
-    /* Footer center alignment */
+    /* Ensure the footer is always at the bottom */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;  /* Allow the body to take up the full height of the viewport */
+    }
+
+    .ftco-footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+    }
+
     .ftco-footer .container {
       text-align: center;
-      padding-bottom: 0;  /* Remove any unnecessary padding */
+      padding-bottom: 0;
     }
 
     /* For social media icons and other inline items */
     .ftco-footer-social {
       text-align: center;
       margin-top: 10px;
-      display: flex;  /* Using flexbox to align icons in a row */
-      justify-content: center;  /* Center the icons horizontally */
-      gap: 15px;  /* Adds space between icons */
+      display: flex;
+      justify-content: center;
+      gap: 15px;
     }
 
     /* For the copyright section */
@@ -659,13 +672,13 @@
       list-style: none;
     }
     .footer-contact ul li {
-      display: flex;  /* Use flexbox for aligning icons and text */
+      display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 10px;
     }
     .footer-contact ul li .icon {
-      margin-right: 10px;  /* Adds space between icon and text */
+      margin-right: 10px;
     }
     .footer-contact ul li a {
       color: white;
@@ -674,7 +687,7 @@
 
     /* Social media icon styling */
     .ftco-footer-social li {
-      list-style: none;  /* Remove bullet points */
+      list-style: none;
     }
 
     .ftco-footer-social li a {
@@ -684,18 +697,18 @@
     }
 
     .ftco-footer-social li a:hover {
-      color: #ff6f61;  /* Change to your desired hover color */
+      color: #ff6f61;
     }
 
-    /* Remove unnecessary margins at the bottom of the footer */
+    /* Ensure no extra margins or padding after footer */
     .ftco-footer-widget {
       margin-bottom: 0;
     }
+
     .ftco-footer .container {
       padding-bottom: 0;
     }
 
-    /* Center all the text in the contact section */
     .block-23 ul {
       text-align: center;
     }

@@ -645,17 +645,24 @@
       text-align: center;
     }
 
-    /* Ensuring that icons and text are centered underneath Clinica PetVital */
+    /* Center the contact section and remove unnecessary margins */
     .footer-contact {
       margin-top: 20px;
       text-align: center;
     }
     .footer-contact ul {
       padding: 0;
+      margin: 0;
+      list-style: none;
     }
     .footer-contact ul li {
-      list-style: none;
+      display: flex;  /* Use flexbox for aligning icons and text */
+      justify-content: center;
+      align-items: center;
       margin-bottom: 10px;
+    }
+    .footer-contact ul li .icon {
+      margin-right: 10px;  /* Adds space between icon and text */
     }
     .footer-contact ul li a {
       color: white;
@@ -717,6 +724,7 @@
     </div>
   </div>
 </footer>
+
 
 			    
 <!-- Loader -->

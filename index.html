@@ -616,11 +616,12 @@
     
 
 		
- <footer class="ftco-footer ftco-bg-dark ftco-section">
+<footer class="ftco-footer ftco-bg-dark ftco-section">
   <style>
     /* Footer center alignment */
     .ftco-footer .container {
       text-align: center;
+      padding-bottom: 0;  /* Remove any unnecessary padding */
     }
 
     /* For social media icons and other inline items */
@@ -659,6 +660,19 @@
     .footer-contact ul li a {
       color: white;
       text-decoration: none;
+    }
+
+    /* Remove unnecessary margins at the bottom of the footer */
+    .ftco-footer-widget {
+      margin-bottom: 0;
+    }
+    .ftco-footer .container {
+      padding-bottom: 0;
+    }
+
+    /* Center all the text in the contact section */
+    .block-23 ul {
+      text-align: center;
     }
   </style>
 
